@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Timestamp</name>
+    </assembly>
+    <members>
+        <member name="T:Timestamp.ITimestampFactory`1">
+            <summary>
+            Timestamp factory.
+            </summary>
+            <typeparam name="T">Type of timestamps.</typeparam>
+        </member>
+        <member name="M:Timestamp.ITimestampFactory`1.Create(System.DateTime)">
+            <summary>
+            Generate time stamp based on given value.
+            </summary>
+            <param name="dateTime"><see cref="T:System.DateTime"/> value.</param>
+            <returns>Time stamp.</returns>
+        </member>
+        <member name="M:Timestamp.ITimestampFactory`1.Create(System.TimeSpan)">
+            <summary>
+            Generate time stamp based on given value.
+            </summary>
+            <param name="timeSpan"><see cref="T:System.TimeSpan"/> value.</param>
+            <returns>Time stamp.</returns>
+        </member>
+        <member name="M:Timestamp.ITimestampFactory`1.GetZero(System.DateTimeKind)">
+            <summary>
+            Time for which timestamp is zero.
+            </summary>
+            <param name="kind">DateTime kind.</param>
+            <returns><see cref="T:System.DateTime"/> for zero timestamp.</returns>
+        </member>
+        <member name="M:Timestamp.ITimestampFactory`1.ToDateTime(`0,System.DateTimeKind)">
+            <summary>
+            Generate <see cref="T:System.DateTime"/> value based on given time stamp.
+            </summary>
+            <param name="timestamp">Time stamp value.</param>
+            <param name="kind">Kind of <see cref="T:System.DateTime"/> to be generated.</param>
+            <returns><see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Timestamp.ITimestampFactory`1.ToTimeSpan(`0)">
+            <summary>
+            Generate <see cref="T:System.TimeSpan"/> value based on given time stamp.
+            </summary>
+            <param name="timestamp">Time stamp value.</param>
+            <returns><see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="T:Timestamp.LongTimestampFactory">
+            <summary>
+            Time stamp factory.
+            </summary>
+            <remarks>Generate timestamps as number of clock ticks elapsed since
+            begining of the century: 2001-01-01 UTC.</remarks>
+        </member>
+        <member name="M:Timestamp.LongTimestampFactory.FromTicks(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Timestamp.LongTimestampFactory.Ticks(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Timestamp.TimestampFactory">
+            <summary>
+            Time stamp factory.
+            </summary>
+            <remarks>Generate timestamps as number of seconds elapsed since
+            begining of the century: 2001-01-01 UTC.</remarks>
+        </member>
+        <member name="M:Timestamp.TimestampFactory.FromTicks(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Timestamp.TimestampFactory.Ticks(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Timestamp.UnixLongTimestampFactory">
+            <summary>
+            Time stamp factory.
+            </summary>
+            <remarks>Generate timestamps as number of clock ticks elapsed since January 1st, 1970 at UTC.</remarks>
+        </member>
+        <member name="M:Timestamp.UnixLongTimestampFactory.FromTicks(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Timestamp.UnixLongTimestampFactory.Ticks(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Timestamp.UnixTimestampFactory">
+            <summary>
+            Time stamp factory.
+            </summary>
+            <remarks>Generate timestamps as number of seconds elapsed since January 1st, 1970 at UTC.</remarks>
+        </member>
+        <member name="M:Timestamp.UnixTimestampFactory.FromTicks(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Timestamp.UnixTimestampFactory.Ticks(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Timestamp.TimestampFactory`1">
+            <summary>
+            Timestamp factory.
+            </summary>
+        </member>
+        <member name="P:Timestamp.TimestampFactory`1.Zero">
+            <summary>
+            Time in Utc for which timestamp is zero which is begining of the century: 2001-01-01.
+            </summary>
+        </member>
+        <member name="M:Timestamp.TimestampFactory`1.GetZero(System.DateTimeKind)">
+            <summary>
+            Time for which timestamp is zero.
+            </summary>
+            <param name="kind">DateTime kind.</param>
+            <returns><see cref="T:System.DateTime"/> for zero timestamp.</returns>
+        </member>
+        <member name="M:Timestamp.TimestampFactory`1.Create(System.DateTime)">
+            <summary>
+            Generate time stamp based on given value.
+            </summary>
+            <param name="dateTime"><see cref="T:System.DateTime"/> value.</param>
+            <returns>Time stamp.</returns>
+        </member>
+        <member name="M:Timestamp.TimestampFactory`1.Create(System.TimeSpan)">
+            <summary>
+            Generate time stamp based on given value.
+            </summary>
+            <param name="timeSpan"><see cref="T:System.TimeSpan"/> value.</param>
+            <returns>Time stamp.</returns>
+        </member>
+        <member name="M:Timestamp.TimestampFactory`1.ToDateTime(`0,System.DateTimeKind)">
+            <summary>
+            Generate <see cref="T:System.DateTime"/> value based on given time stamp.
+            </summary>
+            <param name="timestamp">Time stamp value.</param>
+            <param name="kind">Kind of <see cref="T:System.DateTime"/> to be generated.</param>
+            <returns><see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Timestamp.TimestampFactory`1.ToTimeSpan(`0)">
+            <summary>
+            Generate <see cref="T:System.TimeSpan"/> value based on given time stamp.
+            </summary>
+            <param name="timestamp">Time stamp value.</param>
+            <returns><see cref="T:System.DateTime"/> value.</returns>
+        </member>
+        <member name="M:Timestamp.TimestampFactory`1.Ticks(`0)">
+            <summary>
+            Converts time stamp to clock ticks.
+            </summary>
+            <param name="timestamp">Time stamp value.</param>
+            <returns>Clock ticks.</returns>
+        </member>
+        <member name="M:Timestamp.TimestampFactory`1.FromTicks(System.Int64)">
+            <summary>
+            Generates clock ticks from time stamp.
+            </summary>
+            <param name="ticks">Clock ticks.</param>
+            <returns>Time stamp value.</returns>
+        </member>
+        <member name="T:Timestamp.UnixTimestampFactory`1">
+            <summary>
+            Timestamp factory.
+            </summary>
+        </member>
+        <member name="P:Timestamp.UnixTimestampFactory`1.Zero">
+            <summary>
+            Time in Utc for which timestamp is zero which is <see cref="F:System.DateTime.UnixEpoch"/>.
+            </summary>
+        </member>
+    </members>
+</doc>
