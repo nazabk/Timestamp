@@ -1,6 +1,6 @@
 MIT License
 
-Timestamp, Copyright (c) 2020 Krzysztof Bazan
+Copyright (c) 2020 Krzysztof Bazan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
